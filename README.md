@@ -1,2 +1,2 @@
-# QuantumPrograming
+# QuantumProgramming
 Sandbox mainly for Qiskit.
