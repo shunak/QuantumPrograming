@@ -25,3 +25,6 @@ circ.cx(q[0], q[2])
 # visualize circuit
 circ.draw()
 
+
+
+
