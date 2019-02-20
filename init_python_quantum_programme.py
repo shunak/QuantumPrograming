@@ -9,3 +9,11 @@ backend_sim = BasicAer.get_backend('qasm_simulator')
 r = execute(qc, backend_sim, shots=100).result()
 #量子 回路 名 cnの 量子 プログラムの 実 行 結 果 rからカウント 結 果 取得 し 表示 する
 print(r.get_counts())
+
+
+
+
+
+
+
+# 
