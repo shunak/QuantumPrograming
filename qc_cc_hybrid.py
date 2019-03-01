@@ -2,7 +2,7 @@
 
 from qiskit import *
 from qiskit.tools.visualization import plot_histogram
-from numpy.random import *
+from numpy.random import * #乱数生成のためのライブラリインポート
 
 q = QuantumRegister(1)  # １つの 量子 レジスタqの 生成
 c = ClassicalRegister(1)  # １つの 古典 的 レジスタcの 生成
