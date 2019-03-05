@@ -1,5 +1,10 @@
 from IBMQuantumExperience import IBMQuantumExperience
-api_key = ""
+
+# notice If you are Standard user, job running is limited by unit
+
+api_key = "put your api key"
+
+
 config = {
    "url": 'https://quantumexperience.ng.bluemix.net/api'
 }
