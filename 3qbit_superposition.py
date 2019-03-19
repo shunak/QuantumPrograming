@@ -22,5 +22,3 @@ rc = r.get_counts()
 print(rc)
 plot_histogram(rc)
 
-# 結果、入力ビット|01>に対して、出力ビット|11>となっているので、
-# あたかも制御NOTゲートが逆転した結果になっている
