@@ -1,5 +1,4 @@
-# 3量子ビットを用いた均等な重ね合わせ状態の生成
-
+# トフォリゲートccxゲート（制御ビットがふたつあって、ふたつとも1なら標的ビットを反転させる）
 from qiskit import *
 from qiskit.tools.visualization import plot_histogram
 
@@ -9,8 +8,10 @@ q = QuantumRegister(bn)  # １つの 量子 レジスタqの 生成
 c = ClassicalRegister(bn)  # １つの 古典 的 レジスタcの 生成
 qc = QuantumCircuit(q, c)  # 量子 回路 qcの 生成
 
-for i in range(bn):
-    qc.h(q[i])
+qc.x(q[0])
+qc.x(q[1])
+qc.ccx(q[0], q[1], q[2])
+
 for i in range(bn):
     qc.measure(q[bn-1-i], c[i])
 
@@ -22,3 +23,6 @@ rc = r.get_counts()
 print(rc)
 plot_histogram(rc)
 
+
+# 制御ビットq[0],q[1]が1、標的ビットq[2]が0のとき、
+# つまり、|110>を入力したとき、出力|111>が得られる
