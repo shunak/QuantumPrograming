@@ -27,3 +27,7 @@ rc = r.get_counts()
 print(rc)
 # circuit_drawer(qc)
 plot_histogram(rc)
+
+
+# 確率振幅に変化はない
+
